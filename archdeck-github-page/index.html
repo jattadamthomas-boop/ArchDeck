@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071014">
+  <meta name="description" content="ArchDeck — a cyberdeck-inspired Android launcher with LockDeck, ARCHAMP, notification intelligence, Home Assistant integration and ARCHKEY.">
+  <title>ArchDeck // Cyberdeck Launcher for Android</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ArchDeck home">
+      <span class="brand-mark">A</span>
+      <span>ARCHDECK</span>
+      <span class="muted">// NODE</span>
+    </a>
+    <nav>
+      <a href="#features">FEATURES</a>
+      <a href="#home-assistant">HOME CONTROL</a>
+      <a href="#drawer">APP DRAWER</a>
+      <a href="#screens">SCREENS</a>
+      <a href="#install">INSTALL</a>
+      <a href="privacy.html">PRIVACY</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">ANDROID // CYBERDECK ENVIRONMENT</div>
+        <h1>YOUR PHONE.<br><span>REBUILT AS A DECK.</span></h1>
+        <p class="lede">
+          ArchDeck is a cyberdeck-inspired Android launcher built around live workspaces,
+          a functional terminal-style lock experience, music visualization, notification
+          intelligence, Home Assistant integration and a matching custom keyboard.
+        </p>
+        <div class="cta-row">
+          <a id="download-link" class="button primary" href="#install">DOWNLOAD LATEST</a>
+          <a id="repo-link" class="button ghost" href="#install">VIEW REPOSITORY</a>
+        </div>
+        <div class="status-strip">
+          <span><i></i> BUILD <b>0.6.17</b></span>
+          <span>ANDROID <b>8.0+</b></span>
+          <span>STATUS <b>ACTIVE</b></span>
+        </div>
+      </div>
+
+      <div class="hero-device">
+        <div class="scanline"></div>
+        <img src="assets/screenshots/archdeck-home.png" alt="ArchDeck launcher home screen">
+        <div class="device-label">WORKSPACE // 01</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="ArchDeck modules">
+      <span>LOCKDECK</span><span>ARCHAMP</span><span>ARCHKEY</span><span>HOME ASSISTANT</span>
+      <span>NOTIFICATION BUS</span><span>HOME CONTROL DECK</span><span>APP DRAWER</span><span>CYBER MECH DOCK</span><span>LIVE TELEMETRY</span>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <div class="eyebrow">SYSTEM MODULES</div>
+        <h2>NOT JUST AN ICON PACK.</h2>
+        <p>ArchDeck is designed as one connected interface rather than a collection of unrelated widgets.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature featured">
+          <div class="feature-code">01</div>
+          <h3>Five live workspaces</h3>
+          <p>Swipe through dedicated spaces for your desktop, controls, ARCHAMP, notes and system tools. Swipe up for the app drawer.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-code">02</div>
+          <h3>LockDeck</h3>
+          <p>A terminal-style wake screen with a huge clock, live notification stream, weather, media, Bluetooth and system telemetry.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-code">03</div>
+          <h3>ARCHAMP</h3>
+          <p>Local music deck with album art, playback controls, EQ and multiple beat-reactive visualizers including psychedelic feedback modes.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-code">04</div>
+          <h3>Smart badges</h3>
+          <p>Unread messages, missed calls and overall notification counts appear directly in the launcher without turning the dock into clutter.</p>
+        </article>
+        <article class="feature ha-feature">
+          <div class="feature-code">05</div>
+          <h3>Home Assistant control deck</h3>
+          <p>Control rooms, lights and devices from a launcher-native workspace with live connection state and sensor telemetry. Home Assistant feels built into the deck instead of bolted onto it.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-code">06</div>
+          <h3>ARCHKEY</h3>
+          <p>A companion cyberdeck keyboard that can follow the launcher palette, with lightweight local suggestion and correction behavior.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="home-assistant" class="section ha-showcase">
+      <div class="section-heading">
+        <div class="eyebrow">HOME ASSISTANT // CONTROL DECK</div>
+        <h2>YOUR SMART HOME IS A WORKSPACE.</h2>
+        <p>ArchDeck can turn a launcher page into a live Home Assistant control surface: room controls, device state, sensor data and a direct jump into Home Assistant when you need the full dashboard.</p>
+      </div>
+
+      <div class="ha-layout">
+        <button class="ha-shot" data-image="assets/screenshots/home-assistant-control.png" aria-label="View Home Assistant control deck screenshot">
+          <img src="assets/screenshots/home-assistant-control.png" alt="ArchDeck Home Assistant control workspace with living room and bedroom controls">
+          <span>HOME CONTROL // QUICK REMOTE</span>
+        </button>
+        <div class="ha-copy">
+          <div class="ha-stat"><b>ROOM CONTROL</b><span>Lights and device tiles live directly in the launcher.</span></div>
+          <div class="ha-stat"><b>LIVE TELEMETRY</b><span>Surface sensor values such as crawlspace humidity without opening another app.</span></div>
+          <div class="ha-stat"><b>CONNECTION STATE</b><span>See immediately whether the Home Assistant link is connected or unavailable.</span></div>
+          <div class="ha-stat"><b>ONE TAP DEEP LINK</b><span>Jump into Home Assistant for cameras, automations and the full dashboard.</span></div>
+          <button class="mini-shot" data-image="assets/screenshots/system-glance.png" aria-label="View ArchDeck system glance screenshot">
+            <img src="assets/screenshots/system-glance.png" alt="ArchDeck system at a glance workspace">
+            <span>SYSTEM // AT A GLANCE</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="drawer" class="section drawer-showcase">
+      <div class="drawer-layout">
+        <div class="drawer-copy">
+          <div class="eyebrow">APPLICATION BUS // FAST ACCESS</div>
+          <h2>SWIPE UP. FIND ANYTHING.</h2>
+          <p>The app drawer keeps the cyberdeck look while staying practical: search instantly, filter by category, and long-press apps to pin them exactly where you want them.</p>
+          <div class="drawer-points">
+            <span><b>SEARCH</b> type to find installed apps fast</span>
+            <span><b>FILTER</b> All · Tools · Social · Media · Home</span>
+            <span><b>PIN</b> desktop · category · dock</span>
+            <span><b>ACCESS</b> swipe up or tap the APPS button</span>
+          </div>
+        </div>
+        <button class="drawer-shot" data-image="assets/screenshots/app-drawer.png" aria-label="View ArchDeck app drawer screenshot">
+          <img src="assets/screenshots/app-drawer.png" alt="ArchDeck app drawer with search and category filters">
+          <span>[ APPLICATIONS ]</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="screens" class="section screenshots">
+      <div class="section-heading">
+        <div class="eyebrow">LIVE CAPTURES</div>
+        <h2>BUILT TO LOOK ALIVE.</h2>
+        <p>These are actual ArchDeck screens, not product mockups.</p>
+      </div>
+
+      <div class="shot-grid">
+        <button class="shot large" data-image="assets/screenshots/lockdeck.png" aria-label="View LockDeck screenshot">
+          <img src="assets/screenshots/lockdeck.png" alt="LockDeck terminal lock screen">
+          <span>LOCKDECK // LIVE EVENT STREAM</span>
+        </button>
+        <button class="shot" data-image="assets/screenshots/archamp.png" aria-label="View ARCHAMP screenshot">
+          <img src="assets/screenshots/archamp.png" alt="ARCHAMP music deck and visualizer">
+          <span>ARCHAMP // MUSIC DECK</span>
+        </button>
+        <button class="shot" data-image="assets/screenshots/archdeck-home.png" aria-label="View ArchDeck home screenshot">
+          <img src="assets/screenshots/archdeck-home.png" alt="ArchDeck home workspace">
+          <span>WORKSPACE // HOME</span>
+        </button>
+        <button class="shot" data-image="assets/screenshots/home-assistant-control.png" aria-label="View Home Assistant workspace screenshot">
+          <img src="assets/screenshots/home-assistant-control.png" alt="ArchDeck Home Assistant control workspace">
+          <span>HOME ASSISTANT // CONTROL DECK</span>
+        </button>
+        <button class="shot" data-image="assets/screenshots/app-drawer.png" aria-label="View app drawer screenshot">
+          <img src="assets/screenshots/app-drawer.png" alt="ArchDeck searchable app drawer">
+          <span>APPLICATION BUS // APP DRAWER</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section design-block">
+      <div class="design-terminal">
+        <div class="terminal-head">
+          <span>ARCHDECK // SYSTEM MANIFEST</span>
+          <span class="cyan">LINK CONNECTED</span>
+        </div>
+        <pre><code>&gt; launcher.mode       = CYBERDECK
+&gt; workspace.count     = 5
+&gt; lockdeck.status     = ARMED
+&gt; notification.bus    = ACTIVE
+&gt; archamp.visualizer  = FEEDBACK_ENGINE
+&gt; keyboard.link       = ARCHKEY
+&gt; home_assistant      = CONTROL_DECK
+&gt; user.data.sale      = NEVER
+&gt; aesthetic           = NON_NEGOTIABLE</code></pre>
+      </div>
+      <div class="design-copy">
+        <div class="eyebrow">DESIGN PRINCIPLE</div>
+        <h2>FUNCTION FIRST.<br>THEN MAKE IT LOOK DANGEROUS.</h2>
+        <p>
+          The visual language is inspired by terminals, industrial control panels and
+          fictional cyberdecks, but the data is real: notifications, media state,
+          battery, connectivity, weather and smart-home status.
+        </p>
+      </div>
+    </section>
+
+    <section id="install" class="section install">
+      <div class="section-heading">
+        <div class="eyebrow">SIDELOAD NODE</div>
+        <h2>INSTALL ARCHDECK.</h2>
+        <p>ArchDeck is currently distributed directly as an Android APK.</p>
+      </div>
+
+      <div class="install-grid">
+        <div class="install-step">
+          <span>01</span>
+          <h3>Get the APK</h3>
+          <p>Open the latest GitHub Release and download the current ArchDeck APK.</p>
+        </div>
+        <div class="install-step">
+          <span>02</span>
+          <h3>Allow installation</h3>
+          <p>Android may ask you to allow installs from your browser or file manager. Enable it only for the source you trust.</p>
+        </div>
+        <div class="install-step">
+          <span>03</span>
+          <h3>Choose ArchDeck</h3>
+          <p>Install, open ArchDeck, and select it as your Home app when Android asks.</p>
+        </div>
+      </div>
+
+      <div class="release-box">
+        <div>
+          <strong>ARCHDECK // CURRENT DEVELOPMENT BUILD</strong>
+          <span>0.6.17 · versionCode 40 · API 26+</span>
+        </div>
+        <a id="release-link" class="button primary" href="#">OPEN RELEASES</a>
+      </div>
+
+      <p class="smallprint">
+        ArchDeck is in active development. Back up anything important and review requested Android permissions before installing.
+      </p>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading">
+        <div class="eyebrow">FAQ</div>
+        <h2>BEFORE YOU JACK IN.</h2>
+      </div>
+      <details>
+        <summary>Is ArchDeck a normal Android launcher?</summary>
+        <p>Yes. ArchDeck registers as an Android Home app, but adds its own workspace system, LockDeck presentation layer, media deck and connected modules.</p>
+      </details>
+      <details>
+        <summary>Does LockDeck replace Android security?</summary>
+        <p>No. Android still owns the secure keyguard, fingerprint and PIN authentication. LockDeck is the custom presentation layer shown around that secure system.</p>
+      </details>
+      <details>
+        <summary>Does the visualizer use classic Winamp plugins?</summary>
+        <p>No. ArchDeck uses original audio-reactive renderers, including psychedelic feedback modes inspired by the classic visualizer era. It does not bundle Winamp plugin binaries.</p>
+      </details>
+      <details>
+        <summary>Is the source code open source?</summary>
+        <p>Not by default. This repository can host the website and releases without granting an open-source license to the ArchDeck application itself.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">
+      <span class="brand-mark">A</span>
+      <span>ARCHDECK</span>
+    </div>
+    <p>Cyberdeck launcher for Android. Built for people who think a phone should feel more like a machine.</p>
+    <div class="footer-links">
+      <a id="footer-repo" href="#">GITHUB</a>
+      <a href="privacy.html">PRIVACY</a>
+      <a href="#top">TOP ↑</a>
+    </div>
+  </footer>
+
+  <dialog id="lightbox">
+    <button id="lightbox-close" aria-label="Close screenshot">×</button>
+    <img id="lightbox-image" alt="">
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

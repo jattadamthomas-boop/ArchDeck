@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071014">
+  <title>ArchDeck // Privacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">A</span><span>ARCHDECK</span><span class="muted">// PRIVACY</span></a>
+  </header>
+  <main class="section" style="max-width:900px">
+    <div class="eyebrow">PRIVACY NODE</div>
+    <h2>LOCAL FIRST.</h2>
+    <p class="lede">ArchDeck is designed to process most launcher, notification, keyboard and visualization data on the device.</p>
+
+    <div class="design-terminal" style="margin-top:40px">
+      <div class="terminal-head"><span>ARCHDECK // PRIVACY SUMMARY</span><span class="cyan">USER CONTROLLED</span></div>
+      <pre><code>&gt; notification.content  = processed on-device for LockDeck/badges
+&gt; keyboard.learning     = stored locally by ARCHKEY
+&gt; audio.visualization   = processed locally
+&gt; home_assistant        = connects only when configured by user
+&gt; album.art.lookup      = may use network access
+&gt; personal.data.sale    = no
+&gt; advertising.tracking  = none built into ArchDeck</code></pre>
+    </div>
+
+    <h3 style="margin-top:42px">Notification access</h3>
+    <p>When enabled, ArchDeck uses Android notification-listener access to display notification counts and LockDeck event information. ArchDeck does not need to upload notification content to provide those features.</p>
+
+    <h3>Media and audio</h3>
+    <p>ARCHAMP can process audio information locally to drive visualizers and equalizer features. The Android permissions requested for audio features should be reviewed before use.</p>
+
+    <h3>Home Assistant</h3>
+    <p>If you configure a Home Assistant server, ArchDeck may connect to the server address you provide in order to show smart-home state and controls. Your server credentials should be treated as sensitive.</p>
+
+    <h3>Network requests</h3>
+    <p>Some optional features, such as online album-art lookup and configured Home Assistant access, require network connectivity.</p>
+
+    <h3>Changes</h3>
+    <p>This privacy page should be updated whenever ArchDeck adds a new data source, cloud service, analytics SDK or account system.</p>
+
+    <p style="margin-top:45px"><a class="button ghost" href="index.html">← BACK TO ARCHDECK</a></p>
+  </main>
+</body>
+</html>
