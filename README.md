@@ -8,7 +8,7 @@ This folder is a ready-to-publish **GitHub Pages** landing site for ArchDeck.
 - `style.css` — responsive cyberdeck theme
 - `app.js` — release/repository links + screenshot lightbox
 - `privacy.html` — starter privacy page
-- `assets/screenshots/` — real ArchDeck screenshots
+- `assets/screenshots/` — real ArchDeck screenshots, including Home Assistant control, system telemetry and the app drawer
 - `.nojekyll` — tells GitHub Pages to serve the static files directly
 
 ## Fastest way to publish
@@ -55,3 +55,8 @@ Replace/update:
 ## Screenshot note
 
 The included images are real ArchDeck captures from development, not generated promotional mockups.
+
+
+## Current showcase additions
+
+The site now includes dedicated sections for the launcher-native Home Assistant control deck and the searchable/category-filtered ArchDeck app drawer.

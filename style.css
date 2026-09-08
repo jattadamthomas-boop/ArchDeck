@@ -120,3 +120,46 @@ dialog::backdrop{background:rgba(0,0,0,.88);backdrop-filter:blur(8px)}
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
 }
+
+/* Home Assistant + app drawer product showcases */
+.ha-feature{border-color:rgba(66,225,232,.68);background:linear-gradient(145deg,rgba(12,48,57,.9),rgba(5,11,14,.72));box-shadow:inset 0 0 32px rgba(66,225,232,.035)}
+.ha-feature .feature-code{color:var(--cyan)}
+.ha-showcase{border-top:1px solid rgba(66,225,232,.12)}
+.ha-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:28px;align-items:start}
+.ha-shot,.mini-shot,.drawer-shot{border:1px solid rgba(66,225,232,.4);padding:0;background:#041014;position:relative;overflow:hidden;cursor:pointer;text-align:left}
+.ha-shot{max-height:860px}
+.ha-shot img,.mini-shot img,.drawer-shot img{width:100%;display:block;object-fit:cover;object-position:top;transition:transform .35s ease,filter .35s ease}
+.ha-shot:hover img,.mini-shot:hover img,.drawer-shot:hover img{transform:scale(1.012);filter:brightness(1.06)}
+.ha-shot>span,.mini-shot>span,.drawer-shot>span{position:absolute;left:14px;bottom:14px;background:rgba(5,11,14,.9);border-left:2px solid var(--cyan);padding:7px 10px;color:var(--text);font-size:10px;letter-spacing:.1em}
+.ha-copy{display:grid;gap:12px}
+.ha-stat{padding:18px;border:1px solid rgba(141,164,168,.22);background:linear-gradient(145deg,rgba(10,32,38,.72),rgba(5,11,14,.72))}
+.ha-stat b{display:block;color:var(--cyan);font-size:12px;letter-spacing:.1em;margin-bottom:5px}
+.ha-stat span{display:block;color:var(--muted);font-size:12px}
+.mini-shot{margin-top:6px;max-height:470px}
+.mini-shot img{max-height:470px}
+.drawer-showcase{border-top:1px solid rgba(255,101,79,.12)}
+.drawer-layout{display:grid;grid-template-columns:minmax(320px,.85fr) minmax(0,1.15fr);gap:48px;align-items:center}
+.drawer-copy p{color:var(--muted);max-width:620px}
+.drawer-points{display:grid;gap:10px;margin-top:26px}
+.drawer-points span{border-left:1px solid var(--accent);padding:8px 0 8px 14px;color:var(--muted);font-size:12px}
+.drawer-points b{display:inline-block;min-width:78px;color:var(--accent);letter-spacing:.08em}
+.drawer-shot{justify-self:center;width:min(100%,430px);max-height:760px}
+.drawer-shot img{max-height:760px}
+
+/* expanded screenshots grid */
+.shot-grid{grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:repeat(2,minmax(320px,1fr))}
+.shot.large{grid-row:1/3}
+.shot:nth-child(4),.shot:nth-child(5){min-height:320px}
+
+@media(max-width:900px){
+  .ha-layout,.drawer-layout{grid-template-columns:1fr}
+  .drawer-copy{order:1}.drawer-shot{order:2}
+  .shot-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .shot.large{grid-row:auto}
+}
+@media(max-width:650px){
+  .ha-layout,.drawer-layout{gap:20px}
+  .ha-shot,.mini-shot,.drawer-shot{width:100%;max-height:none}
+  .ha-shot img,.mini-shot img,.drawer-shot img{max-height:none}
+  .shot-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}
+}

@@ -19,6 +19,8 @@
     </a>
     <nav>
       <a href="#features">FEATURES</a>
+      <a href="#home-assistant">HOME CONTROL</a>
+      <a href="#drawer">APP DRAWER</a>
       <a href="#screens">SCREENS</a>
       <a href="#install">INSTALL</a>
       <a href="privacy.html">PRIVACY</a>
@@ -55,7 +57,7 @@
 
     <section class="ticker" aria-label="ArchDeck modules">
       <span>LOCKDECK</span><span>ARCHAMP</span><span>ARCHKEY</span><span>HOME ASSISTANT</span>
-      <span>NOTIFICATION BUS</span><span>CYBER MECH DOCK</span><span>LIVE TELEMETRY</span>
+      <span>NOTIFICATION BUS</span><span>HOME CONTROL DECK</span><span>APP DRAWER</span><span>CYBER MECH DOCK</span><span>LIVE TELEMETRY</span>
     </section>
 
     <section id="features" class="section">
@@ -86,16 +88,61 @@
           <h3>Smart badges</h3>
           <p>Unread messages, missed calls and overall notification counts appear directly in the launcher without turning the dock into clutter.</p>
         </article>
-        <article class="feature">
+        <article class="feature ha-feature">
           <div class="feature-code">05</div>
-          <h3>Home Assistant</h3>
-          <p>Bring your smart-home controls into a dedicated workspace and surface live connection state inside the ArchDeck environment.</p>
+          <h3>Home Assistant control deck</h3>
+          <p>Control rooms, lights and devices from a launcher-native workspace with live connection state and sensor telemetry. Home Assistant feels built into the deck instead of bolted onto it.</p>
         </article>
         <article class="feature">
           <div class="feature-code">06</div>
           <h3>ARCHKEY</h3>
           <p>A companion cyberdeck keyboard that can follow the launcher palette, with lightweight local suggestion and correction behavior.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="home-assistant" class="section ha-showcase">
+      <div class="section-heading">
+        <div class="eyebrow">HOME ASSISTANT // CONTROL DECK</div>
+        <h2>YOUR SMART HOME IS A WORKSPACE.</h2>
+        <p>ArchDeck can turn a launcher page into a live Home Assistant control surface: room controls, device state, sensor data and a direct jump into Home Assistant when you need the full dashboard.</p>
+      </div>
+
+      <div class="ha-layout">
+        <button class="ha-shot" data-image="assets/screenshots/home-assistant-control.png" aria-label="View Home Assistant control deck screenshot">
+          <img src="assets/screenshots/home-assistant-control.png" alt="ArchDeck Home Assistant control workspace with living room and bedroom controls">
+          <span>HOME CONTROL // QUICK REMOTE</span>
+        </button>
+        <div class="ha-copy">
+          <div class="ha-stat"><b>ROOM CONTROL</b><span>Lights and device tiles live directly in the launcher.</span></div>
+          <div class="ha-stat"><b>LIVE TELEMETRY</b><span>Surface sensor values such as crawlspace humidity without opening another app.</span></div>
+          <div class="ha-stat"><b>CONNECTION STATE</b><span>See immediately whether the Home Assistant link is connected or unavailable.</span></div>
+          <div class="ha-stat"><b>ONE TAP DEEP LINK</b><span>Jump into Home Assistant for cameras, automations and the full dashboard.</span></div>
+          <button class="mini-shot" data-image="assets/screenshots/system-glance.png" aria-label="View ArchDeck system glance screenshot">
+            <img src="assets/screenshots/system-glance.png" alt="ArchDeck system at a glance workspace">
+            <span>SYSTEM // AT A GLANCE</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="drawer" class="section drawer-showcase">
+      <div class="drawer-layout">
+        <div class="drawer-copy">
+          <div class="eyebrow">APPLICATION BUS // FAST ACCESS</div>
+          <h2>SWIPE UP. FIND ANYTHING.</h2>
+          <p>The app drawer keeps the cyberdeck look while staying practical: search instantly, filter by category, and long-press apps to pin them exactly where you want them.</p>
+          <div class="drawer-points">
+            <span><b>SEARCH</b> type to find installed apps fast</span>
+            <span><b>FILTER</b> All · Tools · Social · Media · Home</span>
+            <span><b>PIN</b> desktop · category · dock</span>
+            <span><b>ACCESS</b> swipe up or tap the APPS button</span>
+          </div>
+        </div>
+        <button class="drawer-shot" data-image="assets/screenshots/app-drawer.png" aria-label="View ArchDeck app drawer screenshot">
+          <img src="assets/screenshots/app-drawer.png" alt="ArchDeck app drawer with search and category filters">
+          <span>[ APPLICATIONS ]</span>
+        </button>
       </div>
     </section>
 
@@ -119,6 +166,14 @@
           <img src="assets/screenshots/archdeck-home.png" alt="ArchDeck home workspace">
           <span>WORKSPACE // HOME</span>
         </button>
+        <button class="shot" data-image="assets/screenshots/home-assistant-control.png" aria-label="View Home Assistant workspace screenshot">
+          <img src="assets/screenshots/home-assistant-control.png" alt="ArchDeck Home Assistant control workspace">
+          <span>HOME ASSISTANT // CONTROL DECK</span>
+        </button>
+        <button class="shot" data-image="assets/screenshots/app-drawer.png" aria-label="View app drawer screenshot">
+          <img src="assets/screenshots/app-drawer.png" alt="ArchDeck searchable app drawer">
+          <span>APPLICATION BUS // APP DRAWER</span>
+        </button>
       </div>
     </section>
 
@@ -134,7 +189,7 @@
 &gt; notification.bus    = ACTIVE
 &gt; archamp.visualizer  = FEEDBACK_ENGINE
 &gt; keyboard.link       = ARCHKEY
-&gt; home_assistant      = OPTIONAL
+&gt; home_assistant      = CONTROL_DECK
 &gt; user.data.sale      = NEVER
 &gt; aesthetic           = NON_NEGOTIABLE</code></pre>
       </div>

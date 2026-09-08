@@ -16,7 +16,7 @@
     if (el) el.href = releasesUrl;
   });
 
-  document.querySelectorAll(".shot").forEach(shot => {
+  document.querySelectorAll("[data-image]").forEach(shot => {
     shot.addEventListener("click", () => {
       const dlg = document.getElementById("lightbox");
       const img = document.getElementById("lightbox-image");
